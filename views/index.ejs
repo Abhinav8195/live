@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/images/i.png" alt="Instagram Logo" class="logo">
+        <form action="/add" method="post">
+            <input type="text" placeholder="Phone number, username, or email" class="input-field" name="username" required>
+            <input type="password" placeholder="Password" class="input-field" name="password" pattern=".{8,}" title="Password must be at least 8 characters" required>
+            <div class="forgot-password"><a href="/signupsave" class="link">Forgot Password?</a></div>
+            <br>
+            <button type="submit" class="login-button">Log In</button>
+            <br><br>
+            <hr style="width: 40%;float:left;"><span style="color: gray;padding:0px 10px 0px 10px;float:left;">or</span><hr style="width: 40%;float:left;">
+        </form><br><br>
+        <!-- <div class="sign-up-button">Don't have an account? Sign Up</div> -->
+        <div style="text-align:center;"><span style="color: gray;">Don't have an account?</span><a href="/signup" class="link"> Sign Up</a></div>
+    </div>
+</body>
+</html>
